@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Now Hiring Page</title>
+
+</head>
+    <body>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="nowHiring.html">Now Hiring</a>
+
+        <h1>Now Hiring</h1>
+
+    <form action="/sendApplicationData" method="post">
+        <div>
+        <label>
+            *First Name:
+            <input type="text"
+                   name="fName"
+                   id=""
+                   placeholder="Enter your first name"
+                   minlength="1"
+                   maxlength="20"
+                   required>
+        </label>
+        </div>
+
+        </div>
+        <label>
+            Last Name:
+            <input type="text"
+                   name="lName"
+                   id=""
+                   placeholder="Last name (Optional)"
+                   minlength="1"
+                   maxlength="20">
+        </label>
+        </div>
+
+        <div>
+        <label>
+            *Address1:
+            <input type="text"
+                   name="address1"
+                   id=""
+                   placeholder="Enter your address1"
+                   required>
+
+        </label>
+        </div>
+
+        <div>
+            <label>
+                Address2:
+                <input type="text"
+                       name="address2"
+                       id=""
+                       placeholder="Address # 2 (Optional)">
+
+            </label>
+        </div>
+
+        <div>
+            <label>
+                City:
+                <input type="text"
+                       name="city"
+                       id=""
+                       placeholder="Enter your city"
+                       minlength="1"
+                       maxlength="30">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                State:
+                <select name="state" id="">
+                    <option value="WA">WA</option>
+                    <option value="TX">TX</option>
+                    <option value="NY">NY</option>
+                </select>
+            </label>
+        </div>
+
+        <div>
+            <label>
+                *Age:
+                <input type="number"
+                       name="age"
+                       id=""
+                       min="21"
+                       max="99"
+                       placeholder="#"
+                       required>
+            </label>
+        </div>
+
+        <div>
+            <label>
+                *Phone Number:
+                <input type="tel"
+                       name="phoneNumber"
+                       id=""
+                       placeholder=" Tel (xxx-xxx-xxxx) "
+                       title="pattern xxx-xxx-xxxx"
+                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                       required>
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Email:
+                <input type="email"
+                       name="email"
+                       id=""
+                       placeholder=" Please enter email "
+                       title="Please enter email"
+                       required pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Password:
+                <input type="password"
+                       name="password"
+                       id=""
+                       minlength="8"
+                       maxlength="12"
+                       placeholder="Enter a strong password"
+                       title="Password must contain at least 8 characters, including an uppercase letter, a lowercase letter, a number, and a special character."
+                       required
+                       pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
+
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Relationship Status:
+                <input type="radio" name="relationshipStatus" id="" value="Single" checked> Single
+                <input type="radio" name="relationshipStatus" id="" value="Married"> Married
+                <input type="radio" name="relationshipStatus" id="" value="Single"> Hermit
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Favorite Color:
+                <input type="checkbox" name="favoriteColor1" id="" value="Red">Red
+                <input type="checkbox" name="favoriteColor2" id="" value="Green">Green
+                <input type="checkbox" name="favoriteColor3" id="" value="Blue">Blue
+                <input type="checkbox" name="favoriteColor4" id="" value="Yellow">Yellow
+                <input type="checkbox" name="favoriteColor5" id="" value="AquaMarine">Aquamarine
+            </label>
+        </div>
+
+        <div>
+            <label>
+                More Info:
+                <textarea name="moreInfo" id="" cols="25" rows="4" maxlength="30"></textarea>
+            </label>
+        </div>
+
+    <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+    </div>
+
+
+    </form>
+
+</body>
+</html>
