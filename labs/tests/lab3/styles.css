@@ -1,0 +1,14 @@
+#dogImage {
+    width: 500px;         /* Fixed width */
+    height: 400px;        /* Fixed height */
+    object-fit: cover;    /* Ensures the image covers the container */
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#dogImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
