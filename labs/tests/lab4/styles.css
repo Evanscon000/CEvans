@@ -1,0 +1,83 @@
+/* Color Theme Explanation:
+   A dark, moody theme with blacks, reds, and greys to evoke a spooky, horror vibe.
+   This style pays homage to the horror theme while adding a playful twist for Tabor's love of all things spooky.
+*/
+
+body {
+    background-image: url('./assets/spooky-bg-horror.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f8f8f8;
+}
+
+/* Fonts for navbar brand and heading (space mono, red for readability/theme) */
+.navbar-brand, h1 {
+    font-family: 'Space Mono', monospace;
+    color: #ff0000 !important;
+}
+
+/* Center all h1 elements */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Bloody-looking title (Nosifer) */
+.bloody-title {
+    font-family: 'Nosifer', cursive;
+    color: #ff0000;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Better contrast for paragraphs, labels, and nav links */
+p, label, .nav-link {
+    color: #f8f8f8 !important;
+}
+
+form, .container {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #990000;
+}
+
+/* Adding spacing between form elements */
+form > div {
+    margin-bottom: 1rem;
+}
+
+/* Always about that hover effect for increased interactivity */
+.navbar .nav-link:hover {
+    color: #ff0000 !important; /* A spooky red hover effect */
+}
+
+#charCounter {
+    font-size: 0.9rem;
+    color: #ffcccc;
+    margin-top: 0.5rem;
+}
+
+/* Menu info styling for improved readability */
+#menuInfo {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Style for each menu item's */
+#menuItemName {
+    font-family: 'Space Mono', monospace;
+    font-size: 2rem;
+    color: #ff0000;
+    text-shadow: 1px 1px 3px black;
+    margin-bottom: 10px;
+}
+
+/* Styling form inputs, textarea, seklect */
+input, textarea, select {
+    background-color: #333;
+    border: 1px solid #990000;
+    color: #f8f8f8 !important;
+}

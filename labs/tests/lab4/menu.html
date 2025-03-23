@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MenuHauntedCafe</title>
+
+    <!-- Linking favicon -->
+    <link rel="icon" href="./assets/spooky-favicon.webp" type="image/png">
+
+    <!-- Google Font (Space Mono for NavBar and all H1 tags) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- Bootstrap NavBar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <!-- Ghost icon with margin, then favicon and text -->
+            <i class="fas fa-ghost" style="margin-right: 10px;"></i>
+            <img src="./assets/spooky-favicon.webp" alt="Spooky Logo" width="40" height="40" class="d-inline-block align-text-top">
+            Haunted Cafe
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="nowHiring.html">Now Hiring</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End of Bootstrap NavBar -->
+
+<h1 class="text-center mt-4">Menu</h1>
+
+<!-- Haunted Ambience Intro -->
+<section class="container my-4 p-4 bg-dark text-light rounded shadow-lg">
+    <h2 class="bloody-title text-center">Experience the Haunted Ambience</h2>
+    <p class="text-center">
+        Step into the darkness and let the eerie atmosphere of our Haunted Cafe embrace you.
+        Every bite is served with a side of mystery. PREPARE for the bloody best Austin has to offer with this one of a kind menu (locally sourced).
+    </p>
+</section>
+
+<!-- Dynamic menu display container using Flexbox for horizontal alignment -->
+<div id="menuDisplay" class="d-flex justify-content-center align-items-center flex-wrap my-4">
+    <img id="menuImage" src="" alt="Menu Item" class="img-fluid" style="max-width: 400px;">
+    <div id="menuInfo" class="ms-4">
+        <h2 id="menuItemName"></h2>
+        <p id="menuItemDescription"></p>
+        <p id="menuItemPrice"></p>
+    </div>
+</div>
+
+<div class="d-flex justify-content-center mt-3">
+    <button id="prevButton" class="btn btn-secondary mx-2">PREV</button>
+    <button id="nextButton" class="btn btn-secondary mx-2">NEXT</button>
+</div>
+
+<!-- Linking menu.html to JavaScript file script.js -->
+<script src="script.js"></script>
+<!-- Linking menu.html to Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
