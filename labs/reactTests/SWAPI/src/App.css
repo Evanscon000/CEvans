@@ -1,0 +1,78 @@
+/* App.css = specific of my App */
+
+/* Main App container */
+.App {
+  background-image: url('./assets/swapiBackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Button styling */
+button {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ff4757;
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+    background-position: top;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+}
+
+/* Table Styling */
+.character-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.character-table th,
+.character-table td {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: left;
+}
+
+.character-table th {
+  background-color: #a10606;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.character-table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.character-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease;
+}
